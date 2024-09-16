@@ -1,6 +1,7 @@
 package com.example.chatgptbasedcookingingredients.model;
 
 
+import java.util.List;
 
 /**
  * {
@@ -10,5 +11,5 @@ package com.example.chatgptbasedcookingingredients.model;
  *    }
  */
 
-public record OpenAiRequest(String model, List<Message> messages, double temperature) {
+public record OpenAiRequest(String model, List<OpenAiMessage> messages, double temperature) {
 }
